@@ -1,10 +1,8 @@
-# **Task 02: Connected Component Labeling for Object Counting**
+ **Task 02: Connected Component Labeling for Object Counting**
 
 **Roll Number:** 2023-SE-06
 
 ### **Prompt**
-
-`2023-SE-06_Lab_Task_02_DIP-`
 
 *"Write a Python program using OpenCV, NumPy, and Matplotlib to do the following in Google Colab:
 
@@ -20,37 +18,37 @@
 
 ## **Objective**
 
-The objective of this task is to detect and count distinct objects in a given image using **Connected Component (CC) labeling**. Additionally, the task creates a colorful visualization of the detected objects to better understand object segmentation in binary images.
+The objective of this task is to detect and count distinct objects in a given image using **Connected Component (CC) labeling** and create a colorful visualization of the objects for better understanding of object segmentation.
 
 ---
 
 ## **Methodology / Approach**
 
-1. User uploads a colored image in Google Colab using `files.upload()`.
-2. The image is read using `cv2.imread()` and converted from **BGR to RGB** format.
-3. Converted the RGB image to **Grayscale** using `cv2.cvtColor()`.
-4. Applied **Otsu's thresholding** to convert the Grayscale image into a **Binary** image.
-5. Used **Connected Component labeling** (`cv2.connectedComponents`) to detect and count objects in the binary image.
-6. Generated a **colorful label visualization**, assigning each object a random color for better differentiation.
-7. Displayed the **Original Image**, **Binary Image**, and **Connected Component Labeled Image** using Matplotlib with proper titles and axes turned off.
+1. Upload the colored image in Google Colab using `files.upload()`.
+2. Read the image with `cv2.imread()` and convert it from **BGR to RGB**.
+3. Convert the RGB image to **Grayscale**.
+4. Apply **Otsu's thresholding** to generate a **Binary** image.
+5. Perform **Connected Component labeling** to detect and count objects.
+6. Generate a **colorful visualization**, assigning a random color to each object.
+7. Display the **Original**, **Binary**, and **Connected Component Labeled** images using Matplotlib with titles and axes turned off.
 
 ---
 
 ## **Results / Observations**
 
-* Total number of objects detected is printed, excluding the background.
-* Binary image effectively separates objects from the background.
-* Colorful visualization clearly differentiates each connected object, making segmentation and counting intuitive.
-* The workflow works seamlessly in Google Colab for any uploaded colored image.
+* Total number of objects detected is printed, excluding background.
+* Binary image effectively separates objects from background.
+* Colorful visualization differentiates each connected object, aiding in visual analysis.
+* Works correctly for any uploaded colored image in Google Colab.
 
 ---
 
 ## **Tools and Libraries Used**
 
 * **Python 3.x**
-* **OpenCV (cv2):** Image reading, conversion, binary thresholding, connected components
-* **NumPy (np):** Array manipulation for label visualization
-* **Matplotlib (plt):** Visualization of original, binary, and labeled images
-* **Google Colab:** Image upload and execution environment
+* **OpenCV (cv2)** – image reading, conversion, thresholding, connected components
+* **NumPy (np)** – array operations for label visualization
+* **Matplotlib (plt)** – visualization
+* **Google Colab** – image upload and execution
 
 ---
