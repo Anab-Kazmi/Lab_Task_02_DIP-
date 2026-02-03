@@ -1,5 +1,7 @@
 #Lab_Task_02_DIP
+
 2023-SE-06_Lab_Task_02_DIP
+
 Prompt:
 
 "Write a Python program using OpenCV, NumPy, and Matplotlib to do the following in Google Colab:
